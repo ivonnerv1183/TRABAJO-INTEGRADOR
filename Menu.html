@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos</title>
+</head>
+
+<body>
+    <!--Encabezado -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">Menú</a></li>
+                <li><a href="Usuario.html">Mi perfil</a></li>
+                <li><a href="Carrito.html">Carrito</a></li>
+                <li><a href="PedidosPasados.html">Pedidos pasados</a></li>
+                <li><a href="Tienda.html">Tienda</a></li>
+                <li><a href="VerPedidos.html">Ver pedidos</a></li>
+                <li><a href="Login.html">Login</a></li>
+            </ul>
+        </nav>
+<h1>Menú</h1>
+        <!--Logotipo-->
+        <img src="imagenes/logo.jpg" alt="Logotipo de Icase" width="300px">
+
+        <!--Busqueda-->
+        <form action="#" method="get">
+            <label for="buscar">Buscar</label>
+            <input type="text" id="buscar" name="buscar" placeholder="Buscar...">
+            <button type="submit">Buscar</button>
+        </form>
+    </header>
+
+    <hr>
+
+    <!--Contenido principal-->
+
+    <main>
+        <!--Filtros -->
+        <section>
+            <h2>Filtros</h2>
+            <form>
+                <label for="estilos">Estilos:</label>
+                <select id="estilos" name="estilos">
+                    <option value="">Seleccionar estilo</option>
+                    <option value="uso-rudo">Uso rudo</option>
+                    <option value="transparente">Transparente</option>
+                    <option value="privacidad">Privacidad</option>
+                </select>
+          
+
+            <label for="marcas">Marcas:</label>
+            <select name="marcas" id="marcas">
+                <option value="">Seleccionar Marca</option>
+                <option value="apple">Apple</option>
+                <option value="samsung">Samsung</option>
+                <option value="xiaomi">Xiaomi</option>
+            </select>
+            </form>
+        </section>
+
+        <!--Productos -->
+
+        <section>
+            <h1>Catálogo de productos</h1>
+            <ul>
+                <li>
+                    <article>
+                        <img src="imagenes/micaIcase.jpg" alt="Mica de cristal templado iCase"
+                            style="width: 250px; height: 250px; object-fit: cover;">
+                        <h3>Mica Icase</h3>
+                    </article>
+                </li>
+                <li>
+                    <article>
+                        <img src="imagenes/fundaTransparente.jpg" alt="Funda transparente con Magsafe"
+                            style="width: 250px; height: 250px; object-fit: cover;">
+                        <h3>Funda transparente</h3>
+                    </article>
+                </li>
+                <li>
+                    <article>
+                        <img src="imagenes/mica-privacidad.jpg" alt="Mica de cristal de privacidad para celular"
+                            style="width: 250px; height: 250px; object-fit: cover;">
+                        <h3>Mica de Privacidad</h3>
+                    </article>
+                </li>
+                <li>
+                    <article>
+                        <img src="imagenes/mini-consola.jpg" alt="Mini consola de videojuegos portátil"
+                            style="width: 250px; height: 250px; object-fit: cover;">
+                        <h3>Mini Consola</h3>
+                    </article>
+                </li>
+            </ul>
+        </section>
+        <!--Carrito-->
+        <aside>
+            <h2>Tu carrito</h2>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Productos</th>
+                        <th>Nombre</th>
+                        <th>Precio</th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                    <tr>
+                        <td><img src="imagenes/micaIcase.jpg" alt="Mica Icase" width="50"></td>
+                        <td>Mica Icase</td>
+                        <td>$200 MXN</td>
+                    </tr>
+                    <tr>
+                        <td><img src="imagenes/mini-consola.jpg" alt="Mini consola" width="50"></td>
+                        <td>Mini consola</td>
+                        <td>$670 MXN</td>
+                    </tr>
+                    <tr>
+                        <td><img src="imagenes/fundaTransparente.jpg" alt="Funda Transparente" width="50"></td>
+                        <td>Funda Transparente</td>
+                        <td>$230 MXN</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="2"><strong>Subtotal:</strong></td>
+                        <td><strong>$1100 MXN</strong></td>
+                    </tr>
+
+                </tfoot>
+            </table>
+
+            <a href="Carrito.html">
+                <button type="button">Pagar</button>
+            </a>
+
+        </aside>
+
+
+    </main>
+
+</body>
+
+</html>
