@@ -5,27 +5,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ver Pedidos</title>
     
-    <style> body { background-color: #f8f6f0; } </style>
 </head>
 <body>
 
-    <!-- Encabezado-->
-    <header>
+    <aside class="menu_lateral"> <!-- etiqueta aside para el menu lateral-->
+        <img class="menu_imagen" src="imagenes/logo.jpeg" alt="Logo de iCase" height="50" width="50">
+
         <nav>
             <ul>
-                <li><a href="Menu.html">Menú</a></li>
-                <li><a href="Carrito.html">Carrito</a></li>
+                <li><a href="Menu.html">Menu</a></li>
+                <li><a href="carrito.html">Carrito</a></li>
+                <li><a href="VerPedidos.html">Pedidos</a></li>
+                <li><a href="Usuario.html">Usuario</a></li>
+                <li><a href="PedidosPasados.html">Historial</a></li>
+                <li><a href="Inicio.html">Quienes somos?</a></li>
             </ul>
         </nav>
 
-        <!-- Logotipo -->
-        <img src="imagenes/logo.jpg" alt="Logotipo de Icase" width="150">
+        <a href="login.html">Cerrar Sesión</a>
+    </aside>
+    
+    <!-- Encabezado-->
+    <header class="encabezado"> <!-- etiqueta header para el encabezado -->
+        <button type="button" class="boton_menu"><img src="Imagenes/menu.png" alt="icono menú" height="25" width="25"></button>
 
-        <!-- Buscador -->
-        <form action="#" method="get">
-            <input type="text" id="buscar" name="buscar" placeholder="Buscar...">
-            <button type="submit">Buscar</button>
+        <img src="imagenes/logo.jpeg" alt="Logo de la pagina" width="150" height="150">
+
+        <form class="buscador" action="#" method="get">
+            <input type="search" name="busqueda">
+            <button type="submit"> <img src="Imagenes/lupa.png" alt="lupa" height="25" width="25"></button>
         </form>
+
+        <a href="carrito.html"><img src="Imagenes/carrito-de-compras.png" alt="icono carrito super" height="50" width="50"></a>
     </header>
 
     <hr>
