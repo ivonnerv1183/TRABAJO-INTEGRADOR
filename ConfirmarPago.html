@@ -1,11 +1,76 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Resumen de pedido - iCase</title>
 </head>
 <body>
-    
+
+    <!-- Cabecera de la página -->
+    <header>
+        <div>
+            <h1>iCase</h1>
+        </div>
+    </header>
+
+    <hr>
+
+    <!-- Contenido Principal -->
+    <main>
+        <!-- Sección de Dirección de entrega -->
+        <section>
+            <h2>Direccion de entrega</h2>
+            <p>
+                Andres manuel / 66247148741<br>
+                Tubutama #20, Opodepe, Son 75342
+                <span>&#9998;</span>
+            </p>
+        </section>
+
+        <!-- Sección de Método de pago -->
+        <section>
+            <h2>Metodo de pago</h2>
+            <form>
+                <label>
+                    <input type="radio" name="metodo_pago" checked> 
+                    Tarjeta de debito &#128179;
+                </label>
+                <br>
+                <label>
+                    <input type="radio" name="metodo_pago"> 
+                    Efectivo &#128181;
+                </label>
+            </form>
+        </section>
+
+        <!-- Sección del producto seleccionado -->
+        <section>
+            <div>
+                <img src="cartera-verde.png" alt="Cartera magnetica verde">
+            </div>
+            <p><strong>$75.00</strong></p>
+            <div>
+                <button>-</button>
+                <span>1</span>
+                <button>+</button>
+            </div>
+        </section>
+
+        <!-- Sección lateral de Desglose y pago -->
+        <aside>
+            <h2>Desglose</h2>
+            <p>Subtotal: $0.00</p>
+            <p>Ahorrado: $0.00</p>
+            <hr>
+            <p><strong>Total: $0.00</strong></p>
+
+            <br>
+
+            <div>
+                <button>Realizar pedido</button>
+            </div>
+        </aside>
+    </main>
+
 </body>
 </html>
