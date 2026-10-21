@@ -1,11 +1,82 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es-MX">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Usuario</title>
 </head>
 <body>
-    
+
+    <aside class="menu_lateral"> <!-- etiqueta aside para el menu lateral-->
+        <img class="menu_imagen" src="imagenes/logo.jpeg" alt="Logo de iCase" height="50" width="50">
+
+        <nav>
+            <ul>
+                <li><a href="Menu.html">Menu</a></li>
+                <li><a href="carrito.html">Carrito</a></li>
+                <li><a href="VerPedidos.html">Pedidos</a></li>
+                <li><a href="Usuario.html">Usuario</a></li>
+                <li><a href="PedidosPasados.html">Historial</a></li>
+                <li><a href="Inicio.html">Quienes somos?</a></li>
+            </ul>
+        </nav>
+
+        <a href="login.html">Cerrar Sesión</a>
+    </aside>
+
+    <br>
+
+    <header class="encabezado"> <!-- etiqueta header para el encabezado -->
+        <button type="button" class="boton_menu"><img src="Imagenes/menu.png" alt="icono menú" height="25" width="25"></button>
+
+        <img src="imagenes/logo.jpeg" alt="Logo de la pagina" width="50" height="50">
+
+        <form class="buscador" action="#" method="get">
+            <input type="search" name="busqueda">
+            <button type="submit"> <img src="Imagenes/lupa.png" alt="lupa" height="25" width="25"></button>
+        </form>
+
+        <a href="carrito.html"><img src="Imagenes/carrito-de-compras.png" alt="icono carrito super" height="50" width="50"></a>
+    </header>
+
+    <br>
+
+    <main> <!-- area de texto del usuario -->
+
+        <section class="perfil"> <!-- foto de perfil, nombre y correo -->
+            <img src="imagenes/foto_perfil_ejemplo.webp" alt="Foto de perfil de Marissa Romero" width="125" height="125">
+            <h2>Marissa Romero</h2>
+            <p>marissaromero14@gmail.com</p>
+        </section>
+
+        <!-- Datos del usuario -->
+        <section class="datos-usuario">
+            <form>
+                <div>
+                    <label for="nombre">Nombre</label>
+                    <input type="text" id="nombre" value="Marissa Romero">
+                </div>
+
+                <div>
+                    <label for="correo">Correo</label>
+                    <input type="email" id="correo" value="marissaromero14@gmail.com" >
+                </div>
+
+                <div>
+                    <label for="direccion">Dirección</label>
+                    <input type="text" id="direccion" value="Privadas del bosque #54, Los angeles" >
+                </div>
+
+                <div>
+                    <label for="telefono">Teléfono</label>
+                    <input type="tel" id="telefono" value="6635127384" >
+                </div>
+
+                <button type="button" onclick="location.href='editarUsuario.html'">Editar</button>
+            </form>
+        </section>
+
+    </main>
+
 </body>
 </html>
