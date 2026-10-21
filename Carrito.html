@@ -6,26 +6,39 @@
 </head>
 <body>
 
-    <!-- barrita de arriba-->
-    <header>
-        <button type="button">☰ Menú</button>
-        
-        <!-- Logo -->
-        <img src="imagenes/images.jpg" alt="ICase MX">
-        
-        <!-- Barra de búsqueda -->
-        <form action="/buscar" method="GET" style="display:inline;">
+    <aside class="menu_lateral"> <!-- etiqueta aside para el menu lateral-->
+        <img class="menu_imagen" src="imagenes/logo.jpeg" alt="Logo de iCase" height="50" width="50">
 
-            <input type="text" placeholder="Buscar...">
+        <nav>
+            <ul>
+                <li><a href="Menu.html">Menu</a></li>
+                <li><a href="carrito.html">Carrito</a></li>
+                <li><a href="VerPedidos.html">Pedidos</a></li>
+                <li><a href="Usuario.html">Usuario</a></li>
+                <li><a href="PedidosPasados.html">Historial</a></li>
+                <li><a href="Inicio.html">Quienes somos?</a></li>
+            </ul>
+        </nav>
 
-            <button type="submit">🔍</button>
+        <a href="login.html">Cerrar Sesión</a>
+    </aside>
+    
+    <br>
+
+    <header class="encabezado"> <!-- etiqueta header para el encabezado -->
+        <button type="button" class="boton_menu"><img src="Imagenes/menu.png" alt="icono menú" height="25" width="25"></button>
+
+        <img src="imagenes/logo.jpeg" alt="Logo de la pagina" width="50" height="50">
+
+        <form class="buscador" action="#" method="get">
+            <input type="search" name="busqueda">
+            <button type="submit"> <img src="Imagenes/lupa.png" alt="lupa" height="25" width="25"></button>
         </form>
 
-        <!-- titulo de carro-->
-        <a href="/carrito">🛒 Carrito</a>
+        <a href="carrito.html"><img src="Imagenes/carrito-de-compras.png" alt="icono carrito super" height="50" width="50"></a>
     </header>
 
-    <hr>
+    <br>
 
     <main>
         
@@ -35,7 +48,7 @@
 
             <!-- Producto -->
             <article>
-                <img src="imagenes/cartera.jpg" alt="Cartera de iPhone" width="100">
+                <img src="imagenes/51UalEeqp8L.jpg" alt="fundas de iPhone" width="125" height="125">
                 <p>Cartera de iphone</p>
                 
                 <!-- Contador de cantidad -->
@@ -61,12 +74,12 @@
                 <form>
                     <label>
                         <input type="radio" name="metodo_pago" value="tarjeta" checked>
-                        Tarjeta de debito 💳
+                        Tarjeta de debito
                     </label>
                     <br>
                     <label>
                         <input type="radio" name="metodo_pago" value="efectivo">
-                        Efectivo 💵
+                        Efectivo
                     </label>
                 </form>
             </section>
@@ -77,7 +90,7 @@
                 <p>
                     Tubutama #20, Opodepe, Son<br>
                     75342
-                    <button type="button" title="Editar dirección">✏️</button>
+                    <button type="button" title="Editar dirección">Editar</button>
                 </p>
             </section>
 
