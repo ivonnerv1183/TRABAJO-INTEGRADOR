@@ -1,0 +1,90 @@
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Carrito de compra</title>
+</head>
+<body>
+
+    <!-- barrita de arriba-->
+    <header>
+        <button type="button">☰ Menú</button>
+        
+        <!-- Logo -->
+        <img src="imagenes/images.jpg" alt="ICase MX">
+        
+        <!-- Barra de búsqueda -->
+        <form action="/buscar" method="GET" style="display:inline;">
+
+            <input type="text" placeholder="Buscar...">
+
+            <button type="submit">🔍</button>
+        </form>
+
+        <!-- titulo de carro-->
+        <a href="/carrito">🛒 Carrito</a>
+    </header>
+
+    <hr>
+
+    <main>
+        
+        <!-- Sección de Carrito -->
+        <section>
+            <h2>Carrito de compra</h2>
+
+            <!-- Producto -->
+            <article>
+                <img src="imagenes/cartera.jpg" alt="Cartera de iPhone" width="100">
+                <p>Cartera de iphone</p>
+                
+                <!-- Contador de cantidad -->
+                <div>
+                    <button type="button">-</button>
+                    <input type="number" value="0" min="0" readonly>
+                    <button type="button">+</button>
+                </div>
+            </article>
+        </section>
+
+        <!-- Resumen de Pedido y Pago -->
+        <aside>
+            <!-- Resumen de Costos -->
+            <div>
+                <p><strong>Subtotal</strong> $0.00</p>
+                <p><strong>Total</strong> $0.00</p>
+            </div>
+
+            <!-- Método de Pago -->
+            <section>
+                <h3>Metodo de pago</h3>
+                <form>
+                    <label>
+                        <input type="radio" name="metodo_pago" value="tarjeta" checked>
+                        Tarjeta de debito 💳
+                    </label>
+                    <br>
+                    <label>
+                        <input type="radio" name="metodo_pago" value="efectivo">
+                        Efectivo 💵
+                    </label>
+                </form>
+            </section>
+
+            <!-- Dirección -->
+            <section>
+                <h3>Direccion</h3>
+                <p>
+                    Tubutama #20, Opodepe, Son<br>
+                    75342
+                    <button type="button" title="Editar dirección">✏️</button>
+                </p>
+            </section>
+
+            <!-- Botón de Acción -->
+            <button type="button">Continuar</button>
+        </aside>
+
+    </main>
+
+</body>
+</html>
