@@ -1,11 +1,104 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es-MX">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Icase.mx - Ver Pedidos</title>
+    <!-- Fondo tono hueso suave opcional -->
+    <style> body { background-color: #f8f6f0; } </style>
 </head>
 <body>
-    
+
+    <!-- Encabezado-->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="Menu.html">Menú</a></li>
+                <li><a href="Carrito.html">Carrito</a></li>
+            </ul>
+        </nav>
+
+        <!-- Logotipo -->
+        <img src="imagenes/logo.jpg" alt="Logotipo de Icase" width="150">
+
+        <!-- Buscador -->
+        <form action="#" method="get">
+            <input type="text" id="buscar" name="buscar" placeholder="Buscar...">
+            <button type="submit">Buscar</button>
+        </form>
+    </header>
+
+    <hr>
+
+    <!-- Principal -->
+    <main>
+
+        <!-- secciones de pedidos -->
+        <section>
+            <h1>Ver Pedidos</h1>
+
+            <nav>
+                <a href="CancelarPedidos.html">
+                    <button type="button">Cancelar Pedidos</button>
+                </a>
+                <a href="PedidosPasados.html">
+                    <button type="button">Pedidos pasados</button>
+                </a>
+            </nav>
+        </section>
+
+        <!-- Pedidos Actuales -->
+        <section>
+            <h2>Lista de Pedidos</h2>
+
+            <ul>
+                <!-- Pedido 1 -->
+                <li>
+                    <article>
+                        <img src="imagenes/funda-doble.jpg" alt="Funda doble  para teléfono celular" width="180">
+                        
+                        <h3>Funda doble para teléfono, funda grande para smartphone, negra, soporte para teléfono celular.</h3>
+
+                        <ul>
+                            <li>Fecha de llegada: 20/11/2026</li>
+                            <li>Entregar a: Col. Benito Juárez/Av. Nuevo León #142/83170</li>
+                            <li>Cantidad: 3</li>
+                        </ul>
+
+                        <p><strong>Precio Total: 678$</strong></p>
+                    </article>
+                </li>
+
+                <!-- Pedido 2 -->
+                <li>
+                    <article>
+                        <img src="imagenes/funda-beisbol.jpg" alt="Fundas de béisbol" width="180">
+
+                        <h3>Fundas personalizadas para teléfono con nombre de béisbol, diseño moderno para iPhone 11.</h3>
+
+                        <ul>
+                            <li>Fecha de llegada: 20/11/2026</li>
+                            <li>Entregar a: Col. Benito Juárez/Av. Nuevo León #142/83170</li>
+                            <li>Cantidad: 2</li>
+                        </ul>
+
+                        <p><strong>Precio Total: 430$</strong></p>
+                    </article>
+                </li>
+            </ul>
+        </section>
+
+        <!--  regreso -->
+        <nav>
+            <p>
+                <a href="Menu.html">
+                    <button type="button">Atrás</button>
+                </a>
+            </p>
+        </nav>
+
+    </main>
+
+   
 </body>
 </html>
