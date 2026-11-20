@@ -1,104 +1,172 @@
+<!doctype html>
+<html lang="es-MX">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- Hojas de estilos modulares y separadas por responsabilidad -->
+    <link rel="stylesheet" href="css/variables.css" />
+    <link rel="stylesheet" href="css/base.css" />
+    <link rel="stylesheet" href="css/barra.css" />
+    <link rel="stylesheet" href="css/tarjetas.css" />
+    <link rel="stylesheet" href="css/formularios.css" />
+    <link rel="stylesheet" href="css/usuarios.css" />
 
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <title>Carrito de compra</title>
-</head>
-<body>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
 
-    <aside class="menu_lateral"> <!-- etiqueta aside para el menu lateral-->
-        <img class="menu_imagen" src="imagenes/logo.jpeg" alt="Logo de iCase" height="50" width="50">
-
-        <nav>
-            <ul>
-                <li><a href="Menu.html">Menu</a></li>
-                <li><a href="carrito.html">Carrito</a></li>
-                <li><a href="VerPedidos.html">Pedidos</a></li>
-                <li><a href="Usuario.html">Usuario</a></li>
-                <li><a href="PedidosPasados.html">Historial</a></li>
-                <li><a href="Inicio.html">Quienes somos?</a></li>
-            </ul>
-        </nav>
-
-        <a href="login.html">Cerrar Sesión</a>
-    </aside>
-    
-    <br>
-
-    <header class="encabezado"> <!-- etiqueta header para el encabezado -->
-        <button type="button" class="boton_menu"><img src="Imagenes/menu.png" alt="icono menú" height="25" width="25"></button>
-
-        <img src="imagenes/logo.jpeg" alt="Logo de la pagina" width="150" height="150">
-
-        <form class="buscador" action="#" method="get">
-            <input type="search" name="busqueda">
-            <button type="submit"> <img src="Imagenes/lupa.png" alt="lupa" height="25" width="25"></button>
-        </form>
-
-        <a href="carrito.html"><img src="Imagenes/carrito-de-compras.png" alt="icono carrito super" height="50" width="50"></a>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Carrito</title>
+  </head>
+  <body>
+    <header class="encabezado">
+      <img class="logo" src="Imagenes/logo.jpeg" alt="Logo" />
+      <div class="titulo-sub">
+        <h1>ICASEmx</h1>
+        <p>Fundas de telefono y mas.</p>
+      </div>
     </header>
 
-    <br>
+    <nav class="Barra">
+      <ul class="barra-botones">
+        <li><a href="Menu.html">Menu</a></li>
+        <li><a href="Carrito.html">Carrito</a></li>
+        <li><a href="VerPedidos.html">Pedidos</a></li>
+        <li><a href="Usuario.html">Usuario</a></li>
+        <li><a href="historia.html">Historia</a></li>
+      </ul>
+    </nav>
 
-    <main>
-        
-        <!-- Sección de Carrito -->
-        <section>
-            <h2>Carrito de compra</h2>
+    <!-- ---- articulos ---- -->
 
-            <!-- Producto -->
-            <article>
-                <img src="imagenes/51UalEeqp8L.jpg" alt="fundas de iPhone" width="125" height="125">
-                <p>Cartera de iphone</p>
-                
-                <!-- Contador de cantidad -->
-                <div>
-                    <button type="button">-</button>
-                    <input type="number" value="0" min="0" readonly>
-                    <button type="button">+</button>
-                </div>
-            </article>
-        </section>
+    <main class="contenido">
+      <!-- Sección de Carrito -->
 
-        <!-- Resumen de Pedido y Pago -->
-        <aside>
-            <!-- Resumen de Costos -->
-            <div>
-                <p><strong>Subtotal</strong> $0.00</p>
-                <p><strong>Total</strong> $0.00</p>
+      <section>
+        <h1>Carrito de compra</h1>
+        <!-- Producto 1 -->
+        <article class="tarjeta">
+          <div class="tarjeta-contenido">
+            <div class="perfil-contenido">
+              <img
+                src="productos/mini-consola.jpg"
+                alt="carrito1"
+                width="125"
+                height="125"
+              />
+              <div class="titulo-sub">
+                <h2>Mini consola portatil</portal></h2>
+                <p>solo para Gaming se...</p>
+              </div>
             </div>
 
-            <!-- Método de Pago -->
-            <section>
-                <h3>Metodo de pago</h3>
-                <form>
-                    <label>
-                        <input type="radio" name="metodo_pago" value="tarjeta" checked>
-                        Tarjeta de debito
-                    </label>
-                    <br>
-                    <label>
-                        <input type="radio" name="metodo_pago" value="efectivo">
-                        Efectivo
-                    </label>
-                </form>
-            </section>
+            <!-- Contador de cantidad -->
+            <div class="perfil-contenido">
+              <button class="Boton-Articulo" type="menos">-</button>
+              <input class="texbox" type="number" value="1" min="0" readonly />
+              <button class="Boton-Articulo" type="mas">+</button>
+            </div>
+          </div>
+        </article>
 
-            <!-- Dirección -->
-            <section>
-                <h3>Direccion</h3>
-                <p>
-                    Tubutama #20, Opodepe, Son<br>
-                    75342
-                    <button type="button" title="Editar dirección">Editar</button>
-                </p>
-            </section>
+        <!-- Producto 2 -->
+        <article class="tarjeta">
+          <div class="tarjeta-contenido">
+            <div class="perfil-contenido">
+              <img src="productos/mica-privacidad.jpg" alt="carrito2" width="125" height="125" />
+              <div class="titulo-sub">
+                <h2>Mica Gorilla Glass 5</h2>
+                <p>Funda de vidrio templad...</p>
+              </div>
+            </div>
 
-            <!-- Botón de Acción -->
-            <button type="button">Continuar</button>
-        </aside>
+            <!-- Contador de cantidad -->
+            <div class="perfil-contenido">
+              <button class="Boton-Articulo" type="menos">-</button>
+              <input class="texbox" type="number" value="1" min="0" readonly />
+              <button class="Boton-Articulo" type="mas">+</button>
+            </div>
+          </div>
+        </article>
+      </section>
 
+      <!-- Pedidos y Pagos -->
+      <article class="tarjeta">
+        <div class="tarjeta-contenido form-usuario">
+          <!-- Resumen de Costos -->
+          <div class="form-grupo">
+            <h3><strong>Subtotal</strong> $0.00</h3>
+            <h3><strong>Total</strong> $0.00</h3>
+          </div>
+
+          <!-- Metodo de Pago -->
+          <div class="form-grupo">
+            <label class="form-label">Metodo de Pago</label>
+
+            <form>
+              <div class="radio-grupo">
+                <label class="radio-label">
+                  <input
+                    type="radio"
+                    name="MetodoPago"
+                    value="Credito"
+                    checked
+                    class="radio"
+                  />
+                  <span>Tarjeta de Credito</span>
+                </label>
+
+                <label class="radio-label">
+                  <input
+                    type="radio"
+                    name="MetodoPago"
+                    value="Debito"
+                    class="radio"
+                  />
+                  <span>Tarjeta de Debito</span>
+                </label>
+
+                <label class="radio-label">
+                  <input
+                    type="radio"
+                    name="MetodoPago"
+                    value="Efectivo"
+                    class="radio"
+                  />
+                  <span>En Efectivo</span>
+                </label>
+              </div>
+            </form>
+          </div>
+
+          <!-- cual targeta-->
+          <div class="form-grupo">
+            <label class="form-label">Tarjetas Guardadas</label>
+            <select id="rango-seguridad" class="select-box">
+              <option value="" disabled selected>Selecciona tarjenta</option>
+              <option value="1">PlataCard | 4234</option>
+              <option value="2">Banorte | 5342</option>
+              <option value="3">BBVA | 8675</option>
+            </select>
+          </div>
+
+          <!-- Direccion -->
+          <div class="form-grupo">
+            <label class="form-label">Direccion</label>
+            <textarea id="TextoDireccion" class="textarea-box" rows="4">
+Tubutama #20, Opodepe, Sonora, 75342</textarea
+            >
+            <button class="Boton-Articulo" type="EditarD">Editar</button>
+          </div>
+
+          <!-- Boton de Accion -->
+          <button class="Boton-Articulo boton-form" type="Conti">
+            Continuar
+          </button>
+        </div>
+      </article>
     </main>
-
-</body>
+  </body>
 </html>

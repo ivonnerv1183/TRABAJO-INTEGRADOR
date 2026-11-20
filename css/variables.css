@@ -1,0 +1,27 @@
+:root {
+  /* --- Fondos --- */
+  --fondo: #fbfbf3;
+  --barra: #1f2937;
+  --tajeta: #ccdcda;
+
+  /* --- Textos --- */
+  --Texto-principal: #000000;
+  --Texto-secundario: #545455;
+  --TextoSub: #8a91a8;
+  --Texto-blanco: #d3dedc;
+  --precio: #8a6a20;
+  --precio2: #2a2e54;
+
+  /* --- botones --- */
+  --botones: #5f82a0;
+  --focus: #37434d;
+  --hover-en-botones: #6b808e; /*precio*/
+
+  /*texbox*/
+  --borde-caja: #2a2f3d;
+
+  /* --- Sombras y Efectos Glow --- */
+  --seleccion-texbox: 0 0 8px rgba(93, 117, 153, 0.25);
+  --sombra-tarjeta: 0 0 15px rgba(93, 117, 153, 0.25);
+  --borde-radio-general: 15px;
+}

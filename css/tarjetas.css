@@ -1,0 +1,104 @@
+/* --- Contenedor Principal --- */
+.contenido {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 24px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+.contenido h1 {
+  text-align: center;
+}
+
+/* --- Tarjeta de Producto --- */
+.tarjeta {
+  width: 100%;
+  max-width: 350px;
+  min-width: 280px;
+  height: auto;
+  background-color: var(--tarjeta);
+  border: 1px solid var(--botones);
+  border-radius: var(--borde-radio-general);
+  margin: 10px;
+  padding: 0;
+  overflow: hidden;
+  box-shadow: var(--sombra-tarjeta);
+  display: flex;
+  flex-direction: column;
+}
+
+.tarjeta-contenido {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.precio {
+  font-size: 0.85rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: var(--precio);
+  margin-bottom: 8px;
+  overflow-wrap: anywhere;
+}
+
+.tarjeta h2 {
+  font-size: 1.25rem;
+  color: var(--Texto-principal);
+  margin-top: 0;
+  margin-bottom: 12px;
+  overflow-wrap: anywhere;
+}
+
+.tarjeta p {
+  color: var(--Texto-secundario);
+  font-size: 0.95rem;
+  margin-bottom: 20px;
+  flex-grow: 1;
+  overflow-wrap: anywhere;
+}
+
+/* --- Anuncio Principal --- */
+.tarjeta-anuncio {
+  width: 100%;
+  max-width: 1200px;
+  height: 480px;
+  margin: 10px auto;
+  border: 1px solid var(--botones);
+  border-radius: var(--borde-radio-general);
+  overflow: hidden;
+  box-shadow: var(--sombra-tarjeta);
+  display: flex;
+  align-items: center;
+  object-fit: cover;
+}
+
+/* Imagen miniatura dentro de la tarjeta de pedido */
+.tarjetaImagen {
+  width: 100%;
+  height: 270px;
+  object-fit: cover;
+}
+
+.Boton-anuncio {
+  display: inline-block;
+  background-color: var(--botones);
+  color: var(--Texto-principal);
+  text-decoration: none;
+  align-self: flex-start;
+}
+
+.Boton-anuncio img {
+  transition:
+    filter 0.4s ease,
+    transform 0.4s ease;
+}
+
+.Boton-anuncio img:hover {
+  filter: blur(6px);
+  transform: scale(1.03);
+}

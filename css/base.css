@@ -1,0 +1,47 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0; /* Elimina el margen blanco alrededor de la pagina */
+  background-color: var(--fondo);
+  font-family: "Roboto", Arial, sans-serif;
+  color: var(--Texto-principal);
+}
+
+/* ----- Encabezado ----- */
+.encabezado {
+  background-color: var(--barra);
+  text-align: center;
+  padding: 30px 50px 25px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.logo {
+  width: 92px;
+  height: auto;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* ----- Texto Encabezado ----- */
+.titulo-sub h1,
+.titulo-sub p {
+  margin: 0;
+  text-align: start;
+}
+
+.titulo-sub h1 {
+  font-size: 40px;
+  color: var(--Texto-blanco);
+}
+
+.titulo-sub p {
+  margin-top: 7px;
+  font-size: 13px;
+  color: var(--TextoSub);
+}

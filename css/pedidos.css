@@ -1,0 +1,77 @@
+/* Contenedor o banner superior para la gestión */
+.tarjeta-pedidos {
+  width: 100%;
+  max-width: 1200px;
+  background-color: var(--tarjeta);
+  border: 1px solid var(--botones);
+  border-radius: var(--borde-radio-general);
+  box-shadow: var(--sombra-tarjeta);
+  margin: 10px auto;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.tarjeta-pedidos h1 {
+  color: var(--Texto-principal);
+  margin-top: 0;
+  margin-bottom: 15px;
+  font-size: 1.8rem;
+}
+
+/* Contenedor de los botones de navegación interna */
+.contenido-botonesP {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 15px;
+  flex-wrap: wrap;
+}
+
+/* Cancelar pedidos */
+.Boton-Articulo.Cancelar {
+  background-color: var(--borde-caja);
+}
+
+.Boton-Articulo.Cancelar:hover {
+  background-color: var(--hover-en-botones);
+  transform: translateY(-2px);
+}
+
+/* Sección contenedora de la lista de pedidos */
+.encabezado-pedidos {
+  width: 100%;
+  max-width: 1200px;
+  margin: 20px auto;
+}
+
+.encabezado-pedidos h2 {
+  color: var(--Texto-principal);
+  margin: 20px 10px;
+  font-size: 1.4rem;
+  border-bottom: 1px solid var(--botones);
+  padding-bottom: 8px;
+}
+
+/* Cuadrícula para acomodar las tarjetas de pedidos */
+.pedidos-lista {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 24px;
+}
+
+/* Lista interna de detalles */
+.pedido-detalles {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 20px 0;
+  color: var(--Texto-secundario);
+  font-size: 0.9rem;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
