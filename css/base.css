@@ -5,13 +5,12 @@
 }
 
 body {
-  margin: 0; /* Elimina el margen blanco alrededor de la pagina */
+  margin: 0;
   background-color: var(--fondo);
   font-family: "Roboto", Arial, sans-serif;
   color: var(--Texto-principal);
 }
 
-/* ----- Encabezado ----- */
 .encabezado {
   background-color: var(--barra);
   text-align: center;
@@ -28,7 +27,6 @@ body {
   object-fit: cover;
 }
 
-/* ----- Texto Encabezado ----- */
 .titulo-sub h1,
 .titulo-sub p {
   margin: 0;
@@ -67,7 +65,7 @@ select {
 
 input:not([type="radio"]):not([type="checkbox"]):focus,
 select:focus {
-  outline: none;
+  outline: 1px;
   border-color: var(--botones);
   box-shadow: var(--seleccion-texbox);
 }
@@ -94,6 +92,9 @@ main:not(.contenido) > section {
   background: var(--fondo); border: 1px solid var(--botones);
   border-radius: var(--borde-radio-general); box-shadow: var(--sombra-tarjeta);
 }
+
 main h1 { margin: 0 0 20px; font-size: 1.8rem; text-align: center; }
 main nav { margin-top: 16px; text-align: center; }
 a { color: var(--botones); }
+
+.link{ text-align: center; }
