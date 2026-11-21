@@ -53,12 +53,11 @@ main.contenido { flex-direction: column; }
   border-radius: 6px;
   font-size: 0.95rem;
   font-family: "Roboto", Arial, sans-serif;
-  transition: all 0.3s ease;
+  transition: all 0.3s ease;  /* Suaviza la animacion de cualquier propiedad, como al pasar el cursor o abrir el select */
   width: 100%;
   cursor: pointer;
 }
 
-/* ===== Catálogo ===== */
 .catalogo {
   width: 100%;
   max-width: 1100px;
@@ -76,22 +75,21 @@ main.contenido { flex-direction: column; }
   margin-top: 0;
 }
 
-/* Galería: cuadrícula que se adapta al ancho */
 .galeria {
   list-style: none;      /* quita los puntos */
   padding: 0;
   margin: 20px 0 0;
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); 
+/* Hace que el grid que es la cuadricula se llene con tantas culumnas sean posibles, mientras que los cuadros midan 220px, tambien que se distribuya el espacio sobrante */
   gap: 24px;
 }
 
 .galeria a {
-  text-decoration: none;  /* quita el subrayado */
+  text-decoration: none; 
   color: inherit;
 }
 
-/* Tarjeta de cada producto */
 .galeria .tarjeta {
   height: 100%;
   background-color: var(--fondo);
@@ -107,12 +105,12 @@ main.contenido { flex-direction: column; }
 }
 
 .galeria .tarjeta:hover {
-  transform: translateY(-4px);
+  transform: translateY(-4px);  /* animacion q suben las tarjetas */
 }
 
 .galeria .tarjeta img {
   width: 100%;
-  aspect-ratio: 1 / 1;    /* siempre cuadrada */
+  aspect-ratio: 1 / 1;    /* hace q sean cuadrada */
   object-fit: cover;
   border-radius: 8px;
   display: block;
@@ -140,6 +138,7 @@ main.contenido { flex-direction: column; }
 
   .galeria {
     grid-template-columns: repeat(2, 1fr);
+/* fuerza que sean columnas de 2 imagenes con un ancho identico que comparten el espacio sobrante */
     gap: 12px;
   }
 }
