@@ -2,7 +2,7 @@
 <html lang="es-MX">
   <head>
     <meta charset="UTF-8" />
-    <!-- Hojas de estilos modulares y separadas por responsabilidad -->
+
     <link rel="stylesheet" href="css/variables.css" />
     <link rel="stylesheet" href="css/base.css" />
     <link rel="stylesheet" href="css/barra.css" />
@@ -47,21 +47,18 @@
         <h1>Gestión de Pedidos</h1>
 
         <div class="contenido-botonesP">
-          <button type="button" class="Boton-Articulo Cancelar">
-            Cancelar Pedidos
-          </button>
-          <a href="pedidos_anteriores.html">
-          <button type="button" class="Boton-Articulo">Pedidos Pasados</button>
+          <a href="pedidos_anteriores.html" class="Boton-Articulo">
+            Pedidos Pasados
           </a>
         </div>
       </section>
 
-      <!-- Lista de Pedidos Activos (Sincronizada con el catálogo) -->
+      <!-- Lista de Pedidos Activos -->
       <section class="encabezado-pedidos">
         <h2>Lista de Pedidos Activos</h2>
 
         <div class="pedidos-lista">
-          <!-- Pedido 1 (Lentes Pack Premium Arasaka) -->
+          <!-- Pedido 1 -->
           <article class="tarjeta">
             <img
               src="productos/funda-beisbol.jpg"
@@ -69,7 +66,7 @@
               class="tarjetaImagen"
             />
             <div class="tarjeta-contenido">
-              <h2>funda para los mas...</h2>
+              <h2>Funda Naranjeros Club de hermosillo</h2>
               <span class="precio">Precio Total: $2,299 MX</span>
 
               <ul class="pedido-detalles">
@@ -78,11 +75,19 @@
                 <li><strong>Cantidad:</strong> 1</li>
               </ul>
 
-              <a href="#" class="Boton-Articulo">Rastrear Pedido</a>
+              <div>
+                <a href="pedidosDetalles1.html">
+                  <button class="Boton-Articulo">Rastrear Pedido</button>
+                </a>
+
+                <button type="button" class="Boton-Articulo Cancelar">
+                  Cancelar Pedido
+                </button>
+              </div>
             </div>
           </article>
 
-          <!-- Pedido 2 (Mando Premium Retro Gaming Arasaka) -->
+          <!-- Pedido 2 -->
           <article class="tarjeta">
             <img
               src="productos/funda_xavi.jpg"
@@ -90,7 +95,7 @@
               class="tarjetaImagen"
             />
             <div class="tarjeta-contenido">
-              <h2>Pura corrido tumb...</h2>
+              <h2>Generico Funda Xavi Corridos Tumba...</h2>
               <span class="precio">Precio Total: $1,799 MX</span>
 
               <ul class="pedido-detalles">
@@ -98,8 +103,14 @@
                 <li><strong>Entregar a:</strong> Privadas del bosque #54</li>
                 <li><strong>Cantidad:</strong> 2</li>
               </ul>
-
-              <a href="#" class="Boton-Articulo">Rastrear Pedido</a>
+              <div>
+                <a href="pedidosDetalles2.html">
+                  <button class="Boton-Articulo">Rastrear Pedido</button>
+                </a>
+                <button type="button" class="Boton-Articulo Cancelar">
+                  Cancelar Pedido
+                </button>
+              </div>
             </div>
           </article>
         </div>

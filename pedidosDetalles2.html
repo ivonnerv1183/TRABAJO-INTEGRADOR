@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="es-MX">
+  <head>
+    <meta charset="UTF-8" />
+
+    <link rel="stylesheet" href="css/variables.css" />
+    <link rel="stylesheet" href="css/base.css" />
+    <link rel="stylesheet" href="css/barra.css" />
+    <link rel="stylesheet" href="css/tarjetas.css" />
+    <link rel="stylesheet" href="css/formularios.css" />
+    <link rel="stylesheet" href="css/pedidos.css" />
+    <link rel="stylesheet" href="css/historia.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pedidos</title>
+  </head>
+
+  <body>
+    <header class="encabezado">
+      <img class="logo" src="Imagenes/logo.jpeg" alt="Logo" />
+      <div class="titulo-sub">
+        <h1>ICASEmx</h1>
+        <p>Fundas de telefono y mas.</p>
+      </div>
+    </header>
+
+    <nav class="Barra">
+      <ul class="barra-botones">
+        <li><a href="Menu.html">Menu</a></li>
+        <li><a href="Carrito.html">Carrito</a></li>
+        <li><a href="VerPedidos.html">Pedidos</a></li>
+        <li><a href="Usuario.html">Usuario</a></li>
+        <li><a href="pedidos_anteriores.html">Historia</a></li>
+      </ul>
+    </nav>
+
+    <!-- ---- articulos ---- -->
+    <main class="contenido">
+      <!-- Encabezado y botones de gestión de pedidos -->
+      <section class="tarjeta-pedidos">
+        <h1>Estado de Pedido</h1>
+
+        <div class="contenido-botonesP">
+          <a href="VerPedidos.html" class="Boton-Articulo">
+            Volver a Pedidos
+          </a>
+        </div>
+      </section>
+
+      <!-- Lista de Pedidos Activos  -->
+      <section class="encabezado-pedidos">
+        <h2></h2>
+        <div class="pedidos-lista">
+          <!-- Pedido 2 -->
+          <article class="tarjeta-historia">
+            <div class="historia-contenido">
+              <img
+                src="productos/funda_xavi.jpg"
+                alt="NataFunda"
+                class="foto-historia"
+              />
+
+              <div class="historia-texto">
+                <h2>Generico Funda Xavi Corridos Tumba...</h2>
+                <span class="precio">Precio Total: $1,799 MX</span>
+                <p></p>
+
+                <ul class="pedido-detalles">
+                  <li>
+                    <strong>Situacion de paquete:</strong> Llegando a central
+                  </li>
+                  <li><strong>Fecha de llegada:</strong> 22/11/2026</li>
+                  <li><strong>Entregar a:</strong> Privadas del bosque #54</li>
+                  <li><strong>Cantidad:</strong> 6</li>
+                </ul>
+                <p>
+                  Actualmente el paquete se encuentra en el transporte de
+                  llegada a una central de repartos de tu localidad, la llegada
+                  estimada se espera al rededor de las 1 a 4 dias aviles.
+                  Lamentamos los inconveniestes y agradesemos mucho su paciencia
+                  y preferencia.
+                </p>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
