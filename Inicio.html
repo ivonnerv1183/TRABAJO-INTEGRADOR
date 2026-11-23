@@ -4,88 +4,91 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Icase - Página de Inicio</title>
+    <!-- Hojas de estilo existentes -->
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/barra.css">
+    <link rel="stylesheet" href="css/historia.css">
+    <link rel="stylesheet" href="css/tarjetas.css">
 </head>
 <body>
 
-    <aside class="menu_lateral"> <!-- etiqueta aside para el menu lateral-->
-        <img class="menu_imagen" src="Imagenes/logo.jpeg" alt="Logo de iCase" height="50" width="50">
+    <header class="encabezado"> 
+        <img class="logo" src="imagenes/logo.jpeg" alt="Logo de la pagina" width="150" height="150">
+        
+        <div class="titulo-sub">
+            <h1>ICASEmx</h1>
+            <p>Fundas de teléfono y más.</p>
+        </div>
 
+        <form class="buscador" action="#" method="get" style="margin-left: auto; display: flex; align-items: center; gap: 8px;">
+            <input class="texbox" type="search" name="busqueda">
+            <button type="submit"> <img src="imagenes/lupa.png" alt="lupa" height="20" width="20"></button>
+        </form>
+
+        <a href="Carrito.html"><img src="imagenes/carrito-de-compras.png" alt="icono carrito super" height="40" width="40"></a>
+    </header>
+
+  <div class="Barra"> 
         <nav>
-            <ul>
+            <ul class="barra-botones">
                 <li><a href="Menu.html">Menu</a></li>
                 <li><a href="Carrito.html">Carrito</a></li>
                 <li><a href="VerPedidos.html">Pedidos</a></li>
                 <li><a href="Usuario.html">Usuario</a></li>
                 <li><a href="PedidosPasados.html">Historial</a></li>
                 <li><a href="Inicio.html">Quienes somos?</a></li>
+                <li><a href="Login.html">Cerrar Sesión</a></li>
             </ul>
         </nav>
+    </div>
 
-        <a href="Login.html">Cerrar Sesión</a>
-    </aside>
-
-    <br>
-
-    <header class="encabezado"> <!-- etiqueta header para el encabezado -->
-        <button type="button" class="boton_menu"><img src="Imagenes/menu.png" alt="icono menú" height="25" width="25"></button>
-
-        <img src="Imagenes/logo.jpeg" alt="Logo de la pagina" width="150" height="150">
-
-        <form class="buscador" action="#" method="get">
-            <input type="search" name="busqueda">
-            <button type="submit"> <img src="Imagenes/lupa.png" alt="lupa" height="25" width="25"></button>
-        </form>
-
-        <a href="Carrito.html"><img src="Imagenes/carrito-de-compras.png" alt="icono carrito super" height="50" width="50"></a>
-    </header>
-
-    <br>
-
-    <hr>
-
-    <!-- Contenido Principal -->
-    <main>
+  
+    <main class="contenido">
         <!-- Sección Bienvenida-->
-        <section>
+        <section class="tarjeta-pedidos">
             <h1>Bienvenido!</h1>
             <p><strong>Icase: Protegemos lo que te conecta</strong></p>
 
-            <!-- Botón de acceso a Iniciar Sesión -->
-            <p>
-                <a href="Login.html">
-                    <button type="button">Ingresar</button>
-                </a>
-            </p>
+            <!-- Botón -->
+            <div class="contenido-botonesP">
+                <a href="Login.html" class="Boton-Articulo">Ingresar</a>
+            </div>
         </section>
 
         <!-- Sección Información general -->
-        <section>
-            <h2>¿Quiénes somos?</h2>
-            
-            <ul>
-                <li>
-                    <p>
-                        Somos tu aliado en accesorios para celulares. En Icase nos dedicamos a ofrecer las mejores fundas, micas y complementos móviles con precios competitivos de mayoreo y menudeo, garantizando envíos rápidos y un proceso de compra sencillo.
-                    </p>
-                </li>
-            </ul>
+        <section class="tarjeta-historia">
+            <div class="historia-contenido">
+                <div class="historia-texto">
+                    <h2>¿Quiénes somos?</h2>
+                    <ul>
+                        <li>
+                            <p>
+                                Somos tu aliado en accesorios para celulares. En Icase nos dedicamos a ofrecer las mejores fundas, micas y complementos móviles con precios competitivos de mayoreo y menudeo, garantizando envíos rápidos y un proceso de compra sencillo.
+                            </p>
+                        </li>
+                    </ul>
+                </div>
 
-            <img src="Imagenes/logo.jpg" alt="Logotipo Icase" width="250">
+                <img class="foto-historia" src="imagenes/logo.jpeg" alt="Logotipo Icase" width="250">
+            </div>
         </section>
 
-        <!-- Sección Información -->
-        <section>
-            <h2>¿Por qué deberías comprar en Icase?</h2>
+        <section class="tarjeta-historia">
+            <div class="historia-contenido">
+               <img class="foto-historia" src="productos/fundas-colores.png" alt="fundas de diversos colores" width="250">
 
-            <ul>
-                <li>
-                    <p>
-                        Comprar en Icase es garantía de ahorro y conveniencia. Contamos con un catálogo diverso de fundas y artefactos para móviles con atención especial a pedidos por volumen, facilidad para rastrear tus envíos y un sistema de compra en línea.
-                    </p>
-                </li>
-            </ul>
-
-            <img src="Imagenes/fundas-colores.png" alt="fundas de diversos colores" width="250">
+                <div class="historia-texto">
+                    <h2>¿Por qué deberías comprar en Icase?</h2>
+                    <ul>
+                        <li>
+                            <p>
+                                Comprar en Icase es garantía de ahorro y conveniencia. Contamos con un catálogo diverso de fundas y artefactos para móviles con atención especial a pedidos por volumen, facilidad para rastrear tus envíos y un sistema de compra en línea.
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </section>
 
     </main>
