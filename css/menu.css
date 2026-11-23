@@ -1,4 +1,4 @@
-main.contenido { flex-direction: column; }
+main.contenido { flex-direction: column; } /* elementos en una columna */
 
 
 .filtros{
@@ -6,40 +6,43 @@ main.contenido { flex-direction: column; }
   max-width: 500px;      
   min-width: 280px;
   height: auto;
-  background-color: var(--tarjeta);
-  border: 1px solid var(--botones);
+  background-color: var(--tarjeta); 
+  border: 1px solid var(--botones); 
   border-radius: var(--borde-radio-general);
-  margin: 10px;
-  padding: 20px;
-  overflow: hidden;
-  box-shadow: var(--sombra-tarjeta);
-  display: flex;
-  flex-direction: column;
+   box-shadow: var(--sombra-tarjeta); 
+  margin: 10px; 
+  padding: 20px;             
+  overflow: hidden; 
+  display: flex; /* organiza los elementos en una fila */
+  flex-direction: column; 
   align-self: center;
+       /* centra caja */
 }
 
 .filtros h2{
     text-align: center;  
-    margin-top: 0;
+    margin-top: 0; 
     
 }
 
 .filtros form {
-  display: flex;
-  flex-direction: row;   
-  justify-content: center;
-  gap: 48px;
-  flex-wrap: wrap;     
+  display: flex;  
+  flex-direction: row;  
+  justify-content: center; /*  horizontalmente */
+  gap: 48px; 
+  flex-wrap: wrap;  
+  /* se ajusten a la siguiente línea si no hay espacio */
 }
 
 .filtros .campo {
-  font-weight: 600;
-  color: var(--Texto-secundario);
-  text-transform: uppercase;
-  letter-spacing: 0.5px;
-  display: flex;
-  flex-direction: column;
-  gap: 6px;
+  font-weight: 600; 
+  color: var(--Texto-secundario); 
+  text-transform: uppercase; 
+  letter-spacing: 0.5px; 
+  display: flex; /* organiza los elementos en una fila */
+  align-items: center; 
+  flex-direction: column; /* organiza los elementos en una columna */
+  gap: 6px; 
   margin-bottom: 12px;
 }
 
@@ -51,11 +54,11 @@ main.contenido { flex-direction: column; }
   color: var(--Texto-principal);
   padding: 10px 14px;
   border-radius: 6px;
-  font-size: 0.95rem;
+  font-size: 0.95rem; 
   font-family: "Roboto", Arial, sans-serif;
-  transition: all 0.3s ease;  /* Suaviza la animacion de cualquier propiedad, como al pasar el cursor o abrir el select */
+  transition: all 0.3s ease; /* Suaviza la animacion inicio y final  */
   width: 100%;
-  cursor: pointer;
+  cursor: pointer; 
 }
 
 .catalogo {
@@ -79,15 +82,15 @@ main.contenido { flex-direction: column; }
   list-style: none;      /* quita los puntos */
   padding: 0;
   margin: 20px 0 0;
-  display: grid;
+  display: grid; /* organiza los elementos en una cuadricula */
   grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); 
-/* Hace que el grid que es la cuadricula se llene con tantas culumnas sean posibles, mientras que los cuadros midan 220px, tambien que se distribuya el espacio sobrante */
+/* Crea columnas responsivas de mínimo 220px que llenan el ancho disponible */
   gap: 24px;
 }
 
 .galeria a {
-  text-decoration: none; 
-  color: inherit;
+  text-decoration: none;  
+  color: inherit; 
 }
 
 .galeria .tarjeta {
@@ -97,8 +100,8 @@ main.contenido { flex-direction: column; }
   border-radius: var(--borde-radio-general);
   padding: 12px;
   text-align: center;
-  box-shadow: var(--sombra-tarjeta);
-  transition: transform 0.2s ease;
+  box-shadow: var(--sombra-tarjeta) ;
+  transition: transform 0.2s ease; /* Suaviza la animacion  */
   min-width: 0;
   max-width: none;
   margin: 0; 
@@ -111,9 +114,9 @@ main.contenido { flex-direction: column; }
 .galeria .tarjeta img {
   width: 100%;
   aspect-ratio: 1 / 1;    /* hace q sean cuadrada */
-  object-fit: cover;
+  object-fit: cover; /* asegura q la imagen cubra el area sin distorsionarse */
   border-radius: 8px;
-  display: block;
+  display: block; /* elimina el espacio debajo */
 }
 
 .galeria .tarjeta h3 {
@@ -125,7 +128,7 @@ main.contenido { flex-direction: column; }
 
 @media (max-width: 600px) {
   .filtros form {
-    flex-direction: column;
+    flex-direction: column; /* organiza los elementos en una columna */
     gap: 12px;
   }
 
@@ -138,7 +141,7 @@ main.contenido { flex-direction: column; }
 
   .galeria {
     grid-template-columns: repeat(2, 1fr);
-/* fuerza que sean columnas de 2 imagenes con un ancho identico que comparten el espacio sobrante */
+/* Crea 2 columnas del mismo ancho */
     gap: 12px;
   }
 }
