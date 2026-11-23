@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -5,88 +6,119 @@
     <title>Cartera de iphone magnetica - iCase</title>
 </head>
 <body>
+=======
+<!doctype html>
+<html lang="es-MX">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Producto - ICASEmx</title>
 
-    <!-- Cabecera de la página -->
-    <header>
-        <div>
-            <button>&#9776;</button>
-        </div>
-        <div>
-            <h1>iCase</h1>
-        </div>
-        <div>
-            <input type="search" placeholder="">
-            <button>&#128269;</button>
-            <span>&#128722;</span>
-        </div>
+    <link rel="stylesheet" href="css/variables.css" />
+    <link rel="stylesheet" href="css/base.css" />
+    <link rel="stylesheet" href="css/barra.css" />
+    <link rel="stylesheet" href="css/tarjetas.css" />
+    <link rel="stylesheet" href="css/formularios.css" />
+    <link rel="stylesheet" href="css/pedidos.css" />
+    <link rel="stylesheet" href="css/producto.css" />
+    <link rel="stylesheet" href="css/historia.css" />
+    <link rel="stylesheet" href="css/usuarios.css" />
+>>>>>>> c9bd7e296e537eb849ee303a4b1093b4a84a5796
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="encabezado">
+      <img class="logo" src="Imagenes/logo.jpeg" alt="Logo" />
+      <div class="titulo-sub">
+        <h1>ICASEmx</h1>
+        <p>Fundas de telefono y mas.</p>
+      </div>
     </header>
 
-    <hr>
+    <nav class="Barra">
+      <ul class="barra-botones">
+        <li><a href="Menu.html">Menu</a></li>
+        <li><a href="Carrito.html">Carrito</a></li>
+        <li><a href="VerPedidos.html">Pedidos</a></li>
+        <li><a href="Usuario.html">Usuario</a></li>
+        <li><a href="pedidos_anteriores.html">Historia</a></li>
+      </ul>
+    </nav>
 
-    <!-- Contenido Principal -->
-    <main>
-        <!-- Sección de imágenes secundarias (miniatutas) -->
-        <section>
-            <div>
-                <img src="productos/miniatura-azul.png" alt="Miniatura cartera azul">
+    <main class="contenido">
+      <div class="pedidos-lista">
+        <!-- Tarjeta izquierda: imágenes + información -->
+        <article class="tarjeta-pedidos producto-cuerpo">
+          <div class="tarjeta-historia">
+            <div class="historia-contenido">
+              <img
+                class="foto-historia"
+                src="productos/miniatura-azul.png"
+                alt="Miniatura cartera azul"
+              />
+              <img
+                class="foto-historia"
+                src="productos/miniatura-verde.png"
+                alt="Miniatura cartera verde"
+              />
+              <img
+                class="foto-historia"
+                src="productos/miniatura-morado.png"
+                alt="Miniatura cartera morada"
+              />
             </div>
-            <div>
-                <img src="productos/miniatura-verde.png" alt="Miniatura cartera verde">
-            </div>
-            <div>
-                <img src="productos/miniatura-morado.png" alt="Miniatura cartera morada">
-            </div>
-        </section>
+          </div>
 
-        <!-- Imagen principal del productos -->
-        <section>
-            <img src="productos/principal.png" alt="Cartera de iphone magnetica en varios colores">
-        </section>
+          <div class="producto-info-centro">
+            <h1>Cartera de iPhone magnética</h1>
+            <h2 class="precio">Precio: $75.00</h2>
 
-        <!-- Información y detalles del productos -->
-        <section>
-            <h2>Cartera de iphone magnetica</h2>
-            <p><strong>$75.00</strong></p>
-            
-            <hr>
-
-            <h3>Color:</h3>
+            <h2>Color:</h2>
             <div>
-                <img src="color-morado.png" alt="Morado">
-                <img src="color-verde.png" alt="Verde">
-                <img src="color-azul.png" alt="Azul">
+              <button type="button" class="Boton-Articulo">Verde</button>
+              <button type="button" class="Boton-Articulo">Morada</button>
+              <button type="button" class="Boton-Articulo">Azul</button>
             </div>
 
             <h3>Resumen del articulo</h3>
-            <p>Es un pequeño accesorio diseñado para acoplarse directamente en la parte posterior del teléfono.[cite: 1]</p>
-            <p>Características principales</p>
-            <ul>
-                <li></li>
+            <p>
+              Es un pequeño accesorio diseñado para acoplarse directamente en la
+              parte posterior del teléfono.
+            </p>
+
+            <h3>Características principales</h3>
+            <ul class="pedido-detalles">
+              <li>
+                <strong>Compatibilidad:</strong> Carga y soporte magnético
+              </li>
+              <li><strong>Uso:</strong> Ajuste directo en la parte trasera</li>
             </ul>
-        </section>
+          </div>
+        </article>
 
-        <!-- Sección lateral de compra / cantidad -->
-        <aside>
-            <p>Cantidad</p>
-            <div>
-                <button>-</button>
-                <span>1</span>
-                <button>+</button>
-            </div>
+        <!-- Tarjeta derecha: cantidad y botones -->
+        <aside class="tarjeta-pedidos producto-compra-panel">
+          <h2>Cantidad</h2>
+          <div class="perfil-contenido">
+            <button type="button" class="Boton-Articulo">-</button>
+            <input class="texbox" type="number" value="1" min="0" readonly />
+            <button type="button" class="Boton-Articulo">+</button>
+          </div>
 
-            <br>
-
-            <div>
-                <button>Continuar</button>
-            </div>
-
-            <br>
-
-            <div>
-                <button>Agregar al carrito</button>
-            </div>
+          <div class="contenido-botonesP">
+            <button type="button" class="Boton-Articulo">Continuar</button>
+            <button type="button" class="Boton-Articulo Cancelar">
+              Agregar al carrito
+            </button>
+          </div>
         </aside>
+      </div>
     </main>
-
-</body>
+  </body>
 </html>
