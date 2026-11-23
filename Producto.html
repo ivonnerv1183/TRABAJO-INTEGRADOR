@@ -12,6 +12,8 @@
     <link rel="stylesheet" href="css/formularios.css" />
     <link rel="stylesheet" href="css/pedidos.css" />
     <link rel="stylesheet" href="css/producto.css" />
+    <link rel="stylesheet" href="css/historia.css" />
+    <link rel="stylesheet" href="css/usuarios.css" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -35,82 +37,78 @@
         <li><a href="Carrito.html">Carrito</a></li>
         <li><a href="VerPedidos.html">Pedidos</a></li>
         <li><a href="Usuario.html">Usuario</a></li>
-        <li><a href="historia.html">Historia</a></li>
+        <li><a href="pedidos_anteriores.html">Historia</a></li>
       </ul>
     </nav>
 
     <main class="contenido">
-     
-        <div class="pedidos-lista">
-  <!-- Tarjeta izquierda: imágenes + información -->
-  <article class="tarjeta-pedidos producto-cuerpo">
-    <div class="producto-fotos">
-      <div class="producto-miniaturas">
-        <img
-          src="productos/miniatura-azul.png"
-          alt="Miniatura cartera azul"
-        />
-        <img
-          src="productos/miniatura-verde.png"
-          alt="Miniatura cartera verde"
-        />
-        <img
-          src="productos/miniatura-morado.png"
-          alt="Miniatura cartera morada"
-        />
+      <div class="pedidos-lista">
+        <!-- Tarjeta izquierda: imágenes + información -->
+        <article class="tarjeta-pedidos producto-cuerpo">
+          <div class="tarjeta-historia">
+            <div class="historia-contenido">
+              <img
+                class="foto-historia"
+                src="productos/miniatura-azul.png"
+                alt="Miniatura cartera azul"
+              />
+              <img
+                class="foto-historia"
+                src="productos/miniatura-verde.png"
+                alt="Miniatura cartera verde"
+              />
+              <img
+                class="foto-historia"
+                src="productos/miniatura-morado.png"
+                alt="Miniatura cartera morada"
+              />
+            </div>
+          </div>
+
+          <div class="producto-info-centro">
+            <h1>Cartera de iPhone magnética</h1>
+            <h2 class="precio">Precio: $75.00</h2>
+
+            <h2>Color:</h2>
+            <div>
+              <button type="button" class="Boton-Articulo">Verde</button>
+              <button type="button" class="Boton-Articulo">Morada</button>
+              <button type="button" class="Boton-Articulo">Azul</button>
+            </div>
+
+            <h3>Resumen del articulo</h3>
+            <p>
+              Es un pequeño accesorio diseñado para acoplarse directamente en la
+              parte posterior del teléfono.
+            </p>
+
+            <h3>Características principales</h3>
+            <ul class="pedido-detalles">
+              <li>
+                <strong>Compatibilidad:</strong> Carga y soporte magnético
+              </li>
+              <li><strong>Uso:</strong> Ajuste directo en la parte trasera</li>
+            </ul>
+          </div>
+        </article>
+
+        <!-- Tarjeta derecha: cantidad y botones -->
+        <aside class="tarjeta-pedidos producto-compra-panel">
+          <h2>Cantidad</h2>
+          <div class="perfil-contenido">
+            <button type="button" class="Boton-Articulo">-</button>
+            <input class="texbox" type="number" value="1" min="0" readonly />
+            <button type="button" class="Boton-Articulo">+</button>
+          </div>
+
+          <div class="contenido-botonesP">
+            <button type="button" class="Boton-Articulo">Continuar</button>
+            <button type="button" class="Boton-Articulo Cancelar">
+              Agregar al carrito
+            </button>
+          </div>
+        </aside>
       </div>
-
-      <div class="producto-foto-principal">
-        <img
-          src="productos/principal.png"
-          alt="Cartera de iPhone magnética"
-        />
-      </div>
-    </div>
-
-    <div class="producto-info-centro">
-      <p><strong>Precio: $75.00</strong></p>
-
-      <h3>Color:</h3>
-      <div class="producto-colores">
-        <img src="color-morado.png" alt="Morado" />
-        <img src="color-verde.png" alt="Verde" />
-        <img src="color-azul.png" alt="Azul" />
-      </div>
-
-      <h3>Resumen del articulo</h3>
-      <p>
-        Es un pequeño accesorio diseñado para acoplarse directamente en la
-        parte posterior del teléfono.
-      </p>
-
-      <h3>Características principales</h3>
-      <ul class="pedido-detalles">
-        <li><strong>Compatibilidad:</strong> Carga y soporte magnético</li>
-        <li><strong>Uso:</strong> Ajuste directo en la parte trasera</li>
-      </ul>
-    </div>
-  </article>
-
-  <!-- Tarjeta derecha: cantidad y botones -->
-  <aside class="tarjeta-pedidos producto-compra-panel">
-    <p><strong>Cantidad</strong></p>
-    <div class="producto-cantidad-controles">
-      <button type="button" class="Boton-Articulo">-</button>
-      <span>1</span>
-      <button type="button" class="Boton-Articulo">+</button>
-    </div>
-
-    <div class="contenido-botonesP">
-      <button type="button" class="Boton-Articulo">Continuar</button>
-      <button type="button" class="Boton-Articulo Cancelar">
-        Agregar al carrito
-      </button>
-    </div>
-  </aside>
-</div>
-
-
-</main>
-</body>
+    </main>
+  </body>
 </html>
