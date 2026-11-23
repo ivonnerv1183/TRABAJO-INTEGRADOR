@@ -1,0 +1,29 @@
+/* --- Perfil de Usuario --- */
+.perfil-contenido {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 25px;
+}
+
+.foto-perfil {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid var(--botones);
+}
+
+/* --- Ajustes de Formulario de Usuario --- */
+.form-usuario {
+  gap: 20px;
+}
+
+.form-usuario h3 {
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-size: 1.1rem;
+  color: var(--Texto-principal);
+  border-bottom: 1px solid var(--botones);
+  padding-bottom: 8px;
+}

@@ -1,11 +1,106 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+<!doctype html>
+<html lang="es-MX">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- Hojas de estilos modulares y separadas por responsabilidad -->
+    <link rel="stylesheet" href="css/variables.css" />
+    <link rel="stylesheet" href="css/base.css" />
+    <link rel="stylesheet" href="css/barra.css" />
+    <link rel="stylesheet" href="css/tarjetas.css" />
+    <link rel="stylesheet" href="css/formularios.css" />
+    <link rel="stylesheet" href="css/usuarios.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Usuario</title>
+  </head>
+  <body>
+    <header class="encabezado">
+      <img class="logo" src="Imagenes/logo.jpeg" alt="Logo" />
+      <div class="titulo-sub">
+        <h1>ICASEmx</h1>
+        <p>Fundas de telefono y mas.</p>
+      </div>
+    </header>
+
+    <nav class="Barra">
+      <ul class="barra-botones">
+        <li><a href="Menu.html">Menu</a></li>
+        <li><a href="Carrito.html">Carrito</a></li>
+        <li><a href="VerPedidos.html">Pedidos</a></li>
+        <li><a href="Usuario.html">Usuario</a></li>
+        <li><a href="historia.html">Historia</a></li>
+      </ul>
+    </nav>
+
+    <!-- ---- articulos ---- -->
+    <main class="contenido">
+      <!-- Tarjeta de Perfil / Credencial -->
+      <section class="tarjeta">
+        <div class="perfil-contenido">
+          <img
+            src="Imagenes/perfil.jpeg"
+            alt="Foto de perfil"
+            class="foto-perfil"
+          />
+          <div class="titulo-sub">
+            <h2>Alonso RR</h2>
+            <p>alonrodru104@gmail.com</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Tarjeta de Edición de Datos (Formulario) -->
+      <section class="tarjeta">
+        <form class="tarjeta-contenido form-usuario">
+          <h3>Actualizar Datos de Usuario</h3>
+
+          <div class="form-grupo">
+            <label class="form-label" for="nombre">Nombre</label>
+            <input
+              class="texbox"
+              type="text"
+              id="nombre"
+              value="Alonso Rodriguez"
+            />
+          </div>
+
+          <div class="form-grupo">
+            <label class="form-label" for="correo">Correo</label>
+            <input
+              class="texbox"
+              type="email"
+              id="correo"
+              value="Anonrr590@gmail.com"
+            />
+          </div>
+
+          <div class="form-grupo">
+            <label class="form-label" for="direccion">Dirección</label>
+            <input
+              class="texbox"
+              type="text"
+              id="direccion"
+              value="Privadas del bosque #54, Los angeles"
+            />
+          </div>
+
+          <div class="form-grupo">
+            <label class="form-label" for="telefono">Teléfono</label>
+            <input class="texbox" type="tel" id="telefono" value="6325607384" />
+          </div>
+
+          <button type="submit" class="Boton-Articulo boton-form">
+            Guardar Cambios
+          </button>
+        </form>
+      </section>
+    </main>
+  </body>
 </html>

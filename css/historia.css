@@ -1,0 +1,46 @@
+/* --- Sección de Historia --- */
+.tarjeta-historia {
+  width: 100%;
+  max-width: 900px;
+  background-color: var(--tarjeta);
+  border: 1px solid var(--botones);
+  border-radius: var(--borde-radio-general);
+  box-shadow: var(--sombra-tarjeta);
+  margin: 20px auto;
+  padding: 30px;
+}
+
+.historia-contenido {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.foto-historia {
+  width: 240px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 8px;
+  border: 1px solid var(--botones);
+  box-shadow: var(--sombra-tarjeta);
+}
+
+.historia-texto {
+  flex: 1;
+  min-width: 280px;
+}
+
+.historia-texto h2 {
+  font-size: 1.6rem;
+  color: var(--Texto-principal);
+  margin-top: 0;
+  margin-bottom: 6px;
+}
+
+.historia-texto p {
+  color: var(--Texto-secundario);
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}

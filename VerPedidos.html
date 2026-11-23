@@ -1,11 +1,120 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+<!doctype html>
+<html lang="es-MX">
+  <head>
+    <meta charset="UTF-8" />
+
+    <link rel="stylesheet" href="css/variables.css" />
+    <link rel="stylesheet" href="css/base.css" />
+    <link rel="stylesheet" href="css/barra.css" />
+    <link rel="stylesheet" href="css/tarjetas.css" />
+    <link rel="stylesheet" href="css/formularios.css" />
+    <link rel="stylesheet" href="css/pedidos.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pedidos</title>
+  </head>
+
+  <body>
+    <header class="encabezado">
+      <img class="logo" src="Imagenes/logo.jpeg" alt="Logo" />
+      <div class="titulo-sub">
+        <h1>ICASEmx</h1>
+        <p>Fundas de telefono y mas.</p>
+      </div>
+    </header>
+
+    <nav class="Barra">
+      <ul class="barra-botones">
+        <li><a href="Menu.html">Menu</a></li>
+        <li><a href="Carrito.html">Carrito</a></li>
+        <li><a href="VerPedidos.html">Pedidos</a></li>
+        <li><a href="Usuario.html">Usuario</a></li>
+        <li><a href="pedidos_anteriores.html">Historia</a></li>
+      </ul>
+    </nav>
+
+    <!-- ---- articulos ---- -->
+    <main class="contenido">
+      <!-- Encabezado y botones de gestión de pedidos -->
+      <section class="tarjeta-pedidos">
+        <h1>Gestión de Pedidos</h1>
+
+        <div class="contenido-botonesP">
+          <a href="pedidos_anteriores.html" class="Boton-Articulo">
+            Pedidos Pasados
+          </a>
+        </div>
+      </section>
+
+      <!-- Lista de Pedidos Activos -->
+      <section class="encabezado-pedidos">
+        <h2>Lista de Pedidos Activos</h2>
+
+        <div class="pedidos-lista">
+          <!-- Pedido 1 -->
+          <article class="tarjeta">
+            <img
+              src="productos/funda-beisbol.jpg"
+              alt="funda-beisbol"
+              class="tarjetaImagen"
+            />
+            <div class="tarjeta-contenido">
+              <h2>Funda Naranjeros Club de hermosillo</h2>
+              <span class="precio">Precio Total: $2,299 MX</span>
+
+              <ul class="pedido-detalles">
+                <li><strong>Fecha de llegada:</strong> 20/11/2026</li>
+                <li><strong>Entregar a:</strong> Privadas del bosque #54</li>
+                <li><strong>Cantidad:</strong> 1</li>
+              </ul>
+
+              <div>
+                <a href="pedidosDetalles1.html">
+                  <button class="Boton-Articulo">Rastrear Pedido</button>
+                </a>
+
+                <button type="button" class="Boton-Articulo Cancelar">
+                  Cancelar Pedido
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Pedido 2 -->
+          <article class="tarjeta">
+            <img
+              src="productos/funda_xavi.jpg"
+              alt="NataFunda"
+              class="tarjetaImagen"
+            />
+            <div class="tarjeta-contenido">
+              <h2>Generico Funda Xavi Corridos Tumba...</h2>
+              <span class="precio">Precio Total: $1,799 MX</span>
+
+              <ul class="pedido-detalles">
+                <li><strong>Fecha de llegada:</strong> 22/11/2026</li>
+                <li><strong>Entregar a:</strong> Privadas del bosque #54</li>
+                <li><strong>Cantidad:</strong> 2</li>
+              </ul>
+              <div>
+                <a href="pedidosDetalles2.html">
+                  <button class="Boton-Articulo">Rastrear Pedido</button>
+                </a>
+                <button type="button" class="Boton-Articulo Cancelar">
+                  Cancelar Pedido
+                </button>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+    </main>
+  </body>
 </html>

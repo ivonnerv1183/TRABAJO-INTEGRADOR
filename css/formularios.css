@@ -1,0 +1,169 @@
+/* --- Inputs y Cajas de Texto --- */
+.texbox {
+  background-color: var(--fondo);
+  border: 1px solid var(--borde-caja);
+  color: var(--Texto-principal);
+  padding: 10px 14px;
+  border-radius: 6px;
+  font-size: 0.95rem;
+  font-family: "Roboto", Arial, sans-serif;
+  transition: all 0.3s ease;
+  width: 100%;
+}
+
+.texbox:focus {
+  outline: none;
+  border-color: var(--botones);
+  box-shadow: var(--seleccion-texbox);
+}
+
+/* --- Estructura de Campos --- */
+.form-grupo {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.form-label {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--Texto-secundario);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+/* --- Botones --- */
+.Boton-Articulo {
+  border: none;
+  display: inline-block;
+  background-color: var(--botones);
+  color: var(--fondo);
+  padding: 10px 18px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 500;
+  text-align: center;
+  font-weight: 600;
+  transition:
+    background-color 0.2s ease,
+    transform 0.1s ease;
+  align-self: flex-start;
+}
+
+.Boton-Articulo:hover {
+  background-color: var(--hover-en-botones);
+  transform: translateY(-2px);
+}
+
+.Boton-Articulo:focus-visible {
+  outline: 3px solid var(--focus);
+  outline-offset: 2px;
+}
+
+.boton-form {
+  cursor: pointer;
+  margin-top: 10px;
+  width: 100%;
+}
+
+/* --- Textarea --- */
+.textarea-box {
+  background-color: var(--fondo);
+  border: 1px solid var(--borde-caja);
+  color: var(--Texto-secundario);
+  padding: 10px 14px;
+  border-radius: 6px;
+  font-size: 0.95rem;
+  font-family: "Roboto", Arial, sans-serif;
+  transition: all 0.3s ease;
+  width: 100%;
+  resize: vertical; /* Permite estirar solo hacia abajo si es necesario */
+}
+
+.textarea-box:focus {
+  outline: none;
+  border-color: var(--botones);
+  box-shadow: var(--seleccion-texbox);
+}
+
+/* --- Select / ComboBox --- */
+.select-box {
+  background-color: var(--fondo);
+  border: 1px solid var(--borde-caja);
+  color: var(--Texto-principal);
+  padding: 10px 14px;
+  border-radius: 6px;
+  font-size: 0.95rem;
+  font-family: "Roboto", Arial, sans-serif;
+  transition: all 0.3s ease;
+  width: 100%;
+  cursor: pointer;
+}
+
+.select-box:focus {
+  outline: none;
+  border-color: var(--botones);
+  box-shadow: var(--seleccion-texbox);
+}
+
+/* Color para las opciones desplegables dentro del select */
+.select-box option {
+  background-color: var(--fondo);
+  color: var(--Texto-principal);
+}
+
+/* --- Radio Buttons personalizados --- */
+.radio-grupo {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 4px;
+}
+
+.radio-label {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  color: var(--Texto-principal);
+  user-select: none;
+}
+
+/* Personalización sutil del radio button para que encaje con el rojo Arasaka */
+.radio {
+  appearance: none;
+  -webkit-appearance: none;
+  width: 18px;
+  height: 18px;
+  border: 2px solid var(--borde-caja);
+  border-radius: 50%;
+  background-color: var(--fondo);
+  outline: none;
+  transition: all 0.2s ease;
+  cursor: pointer;
+  position: relative;
+}
+
+/* Punto central cuando está seleccionado */
+.radio:checked {
+  border-color: var(--botones);
+  background-color: var(--fondo);
+  box-shadow: --var(--seleccion-texbox);
+}
+
+.radio:checked::after {
+  content: "";
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  width: 8px;
+  height: 8px;
+  background-color: var(--botones);
+  border-radius: 50%;
+}
+
+.radio:focus-visible {
+  outline: 2px solid var(--focus);
+  outline-offset: 2px;
+}

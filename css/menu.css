@@ -1,0 +1,144 @@
+main.contenido { flex-direction: column; }
+
+
+.filtros{
+  width: 100%;
+  max-width: 500px;      
+  min-width: 280px;
+  height: auto;
+  background-color: var(--tarjeta);
+  border: 1px solid var(--botones);
+  border-radius: var(--borde-radio-general);
+  margin: 10px;
+  padding: 20px;
+  overflow: hidden;
+  box-shadow: var(--sombra-tarjeta);
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+}
+
+.filtros h2{
+    text-align: center;  
+    margin-top: 0;
+    
+}
+
+.filtros form {
+  display: flex;
+  flex-direction: row;   
+  justify-content: center;
+  gap: 48px;
+  flex-wrap: wrap;     
+}
+
+.filtros .campo {
+  font-weight: 600;
+  color: var(--Texto-secundario);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-bottom: 12px;
+}
+
+
+
+.filtros select {
+  background-color: var(--fondo);
+  border: 1px solid var(--borde-caja);
+  color: var(--Texto-principal);
+  padding: 10px 14px;
+  border-radius: 6px;
+  font-size: 0.95rem;
+  font-family: "Roboto", Arial, sans-serif;
+  transition: all 0.3s ease;  /* Suaviza la animacion de cualquier propiedad, como al pasar el cursor o abrir el select */
+  width: 100%;
+  cursor: pointer;
+}
+
+.catalogo {
+  width: 100%;
+  max-width: 1100px;
+  align-self: center;
+  margin: 10px;
+  padding: 20px;
+  background-color: var(--tarjeta);
+  border: 1px solid var(--botones);
+  border-radius: var(--borde-radio-general);
+  box-shadow: var(--sombra-tarjeta);
+}
+
+.catalogo h2 {
+  text-align: center;
+  margin-top: 0;
+}
+
+.galeria {
+  list-style: none;      /* quita los puntos */
+  padding: 0;
+  margin: 20px 0 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); 
+/* Hace que el grid que es la cuadricula se llene con tantas culumnas sean posibles, mientras que los cuadros midan 220px, tambien que se distribuya el espacio sobrante */
+  gap: 24px;
+}
+
+.galeria a {
+  text-decoration: none; 
+  color: inherit;
+}
+
+.galeria .tarjeta {
+  height: 100%;
+  background-color: var(--fondo);
+  border: 1px solid var(--borde-caja);
+  border-radius: var(--borde-radio-general);
+  padding: 12px;
+  text-align: center;
+  box-shadow: var(--sombra-tarjeta);
+  transition: transform 0.2s ease;
+  min-width: 0;
+  max-width: none;
+  margin: 0; 
+}
+
+.galeria .tarjeta:hover {
+  transform: translateY(-4px);  /* animacion q suben las tarjetas */
+}
+
+.galeria .tarjeta img {
+  width: 100%;
+  aspect-ratio: 1 / 1;    /* hace q sean cuadrada */
+  object-fit: cover;
+  border-radius: 8px;
+  display: block;
+}
+
+.galeria .tarjeta h3 {
+  margin: 12px 0 0;
+  font-size: 1.1rem;
+  color: var(--Texto-principal);
+}
+
+
+@media (max-width: 600px) {
+  .filtros form {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .filtros,
+  .catalogo {
+    min-width: 0;
+    margin: 0;
+    padding: 12px;
+  }
+
+  .galeria {
+    grid-template-columns: repeat(2, 1fr);
+/* fuerza que sean columnas de 2 imagenes con un ancho identico que comparten el espacio sobrante */
+    gap: 12px;
+  }
+}
