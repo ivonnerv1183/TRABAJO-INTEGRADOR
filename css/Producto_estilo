@@ -1,0 +1,209 @@
+/* Contenedor o banner superior para la gestión */
+.tarjeta-pedidos {
+  width: 100%;
+  max-width: 1200px;
+  background-color: var(--tarjeta);
+  border: 1px solid var(--botones);
+  border-radius: var(--borde-radio-general);
+  box-shadow: var(--sombra-tarjeta);
+  margin: 10px auto;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.tarjeta-pedidos h1 {
+  color: var(--Texto-principal);
+  margin-top: 0;
+  margin-bottom: 15px;
+  font-size: 1.8rem;
+}
+
+/* Contenedor de los botones de navegación interna */
+.contenido-botonesP {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 15px;
+  flex-wrap: wrap;
+}
+
+/* Cancelar pedidos */
+.Boton-Articulo.Cancelar {
+  background-color: var(--borde-caja);
+}
+
+.Boton-Articulo.Cancelar:hover {
+  background-color: var(--hover-en-botones);
+  transform: translateY(-2px);
+}
+
+/* Sección contenedora de la lista de pedidos */
+.encabezado-pedidos {
+  width: 100%;
+  max-width: 1200px;
+  margin: 20px auto;
+}
+
+.encabezado-pedidos h2 {
+  color: var(--Texto-principal);
+  margin: 20px 10px;
+  font-size: 1.4rem;
+  border-bottom: 1px solid var(--botones);
+  padding-bottom: 8px;
+}
+
+/* Cuadrícula para acomodar las tarjetas de pedidos */
+.pedidos-lista {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 24px;
+}
+
+/* Lista interna de detalles */
+.pedido-detalles {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 20px 0;
+  color: var(--Texto-secundario);
+  font-size: 0.9rem;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+/* producto */
+.pedidos-lista {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start; /* alineadas arriba */
+  justify-content: space-between; /* izquierda y derecha */
+  gap: 24px;
+}
+
+/* Tarjeta principal (imágenes + información) */
+.pedidos-lista > .producto-cuerpo {
+  flex: 1 1 620px; /* crece y ocupa el lado izquierdo */
+  margin: 0;
+}
+
+/* Tarjeta de compra (botones a la derecha) */
+.pedidos-lista > .producto-compra-panel {
+  flex: 0 1 280px; /* ancho lateral */
+  max-width: 320px;
+  margin: 0;
+}
+<!doctype html>
+<html lang="es-MX">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Producto - ICASEmx</title>
+
+    <link rel="stylesheet" href="css/variables.css" />
+    <link rel="stylesheet" href="css/base.css" />
+    <link rel="stylesheet" href="css/barra.css" />
+    <link rel="stylesheet" href="css/tarjetas.css" />
+    <link rel="stylesheet" href="css/formularios.css" />
+    <link rel="stylesheet" href="css/pedidos.css" />
+    <link rel="stylesheet" href="css/producto.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="encabezado">
+      <img class="logo" src="Imagenes/logo.jpeg" alt="Logo" />
+      <div class="titulo-sub">
+        <h1>ICASEmx</h1>
+        <p>Fundas de telefono y mas.</p>
+      </div>
+    </header>
+
+    <nav class="Barra">
+      <ul class="barra-botones">
+        <li><a href="Menu.html">Menu</a></li>
+        <li><a href="Carrito.html">Carrito</a></li>
+        <li><a href="VerPedidos.html">Pedidos</a></li>
+        <li><a href="Usuario.html">Usuario</a></li>
+        <li><a href="historia.html">Historia</a></li>
+      </ul>
+    </nav>
+
+    <main class="contenido">
+     
+        <div class="pedidos-lista">
+  <!-- Tarjeta izquierda: imágenes + información -->
+  <article class="tarjeta-pedidos producto-cuerpo">
+    <div class="producto-fotos">
+      <div class="producto-miniaturas">
+        <img
+          src="productos/miniatura-azul.png"
+          alt="Miniatura cartera azul"
+        />
+        <img
+          src="productos/miniatura-verde.png"
+          alt="Miniatura cartera verde"
+        />
+        <img
+          src="productos/miniatura-morado.png"
+          alt="Miniatura cartera morada"
+        />
+      </div>
+
+      <div class="producto-foto-principal">
+        <img
+          src="productos/principal.png"
+          alt="Cartera de iPhone magnética"
+        />
+      </div>
+    </div>
+
+    <div class="producto-info-centro">
+      <p><strong>Precio: $75.00</strong></p>
+
+      <h3>Color:</h3>
+      <div class="producto-colores">
+        <img src="color-morado.png" alt="Morado" />
+        <img src="color-verde.png" alt="Verde" />
+        <img src="color-azul.png" alt="Azul" />
+      </div>
+
+      <h3>Resumen del articulo</h3>
+      <p>
+        Es un pequeño accesorio diseñado para acoplarse directamente en la
+        parte posterior del teléfono.
+      </p>
+
+      <h3>Características principales</h3>
+      <ul class="pedido-detalles">
+        <li><strong>Compatibilidad:</strong> Carga y soporte magnético</li>
+        <li><strong>Uso:</strong> Ajuste directo en la parte trasera</li>
+      </ul>
+    </div>
+  </article>
+
+  <!-- Tarjeta derecha: cantidad y botones -->
+  <aside class="tarjeta-pedidos producto-compra-panel">
+    <p><strong>Cantidad</strong></p>
+    <div class="producto-cantidad-controles">
+      <button type="button" class="Boton-Articulo">-</button>
+      <span>1</span>
+      <button type="button" class="Boton-Articulo">+</button>
+    </div>
+
+    <div class="contenido-botonesP">
+      <button type="button" class="Boton-Articulo">Continuar</button>
+      <button type="button" class="Boton-Articulo Cancelar">
+        Agregar al carrito
+      </button>
+    </div>
+  </aside>
+</div>
